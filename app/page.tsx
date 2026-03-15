@@ -42,7 +42,7 @@ export default function Home() {
             <label className="font-medium text-cyan-300">Network:</label>
             <select
               value={cluster}
-              onChange={(e) => setCluster(e.target.value as any)}
+              onChange={(e) => setCluster(e.target.value as "mainnet-beta" | "testnet" | "devnet" | "custom")}
               className="rounded-lg border border-white/20 bg-black/50 px-3 py-2 text-sm text-white outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400"
             >
               <option value="mainnet-beta">Mainnet Beta</option>

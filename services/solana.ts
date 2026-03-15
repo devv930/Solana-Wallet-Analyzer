@@ -182,7 +182,7 @@ export async function getNfts(address: string, rpcUrl: string, limit = NFT_FETCH
   for (const nft of ownedNfts.slice(0, limit)) {
     let image: string | undefined;
     let name = nft.name || "Untitled NFT";
-    let collection = nft.collection?.verified ? "Verified Collection" : "Unverified Collection";
+    const collection = nft.collection?.verified ? "Verified Collection" : "Unverified Collection";
 
     if (nft.uri) {
       try {

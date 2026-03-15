@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { Connection, PublicKey } from "@solana/web3.js";
 
 const CLUSTER_RPC_URLS = {
   "mainnet-beta": "https://api.mainnet-beta.solana.com",
